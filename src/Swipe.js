@@ -81,6 +81,6 @@ function Swipe(props) {
 export default Swipe;
 
 Swipe.defaultProps = {
-    next: () => {},
-    previous: () => {}
+    next: () => { },
+    previous: () => { }
 };

@@ -8,9 +8,15 @@ function Carousel(props) {
     const slidesCount = React.Children.count(props.children);
 
     const [activeSlide, setActiveSlide] = useState(0);
-    const [slideWidth, setSlideWidth] = useState(0);
+    
+    // forced width
+    let w = parseInt(props.width); 
+    if (isNaN(w)) w = 0;
+    const [slideWidth, setSlideWidth] = useState(w);
 
     useEffect(() => {
+        if (props.width != null || props.width !== '') return;
+
         const $container = containerRef.current;
         if ($container) {
             const { width } = $container.getBoundingClientRect();
@@ -31,7 +37,7 @@ function Carousel(props) {
     }
 
     return (
-        <div className="carousel">
+        <div className="carousel" style={{ width: props.width }}>
             {/* <button type="button" className="" aria-label="carousel-prev">prev</button> */}
             <Swipe previous={previous} next={next}>
                 <div ref={containerRef} className="carousel-track-container" style={{ height: props.height }}>
@@ -49,3 +55,8 @@ function Carousel(props) {
 }
 
 export default Carousel;
+
+Carousel.defaultProps = {
+    width: undefined,
+    height: ''
+}

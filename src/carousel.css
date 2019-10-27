@@ -2,6 +2,9 @@
     position: relative;
     overflow: hidden;
 }
+.carousel .carousel-track {
+    transition: transform 500ms ease 0s;
+}
 .carousel .carousel-slide {
     position: absolute;
     left: 0;
