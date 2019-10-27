@@ -10,6 +10,8 @@ function Example() {
             <Carousel height="480px" width="640px">
                 <img src="/assets/image_1.jpg" />
                 <img src="/assets/image_2.jpeg" />
+                <img src="/assets/image_1.jpg" />
+                <img src="/assets/image_2.jpeg" />
             </Carousel>
         </div>
     )
