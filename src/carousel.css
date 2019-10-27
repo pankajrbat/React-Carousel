@@ -1,0 +1,11 @@
+.carousel .carousel-track-container {
+    position: relative;
+    overflow: hidden;
+}
+.carousel .carousel-slide {
+    position: absolute;
+    left: 0;
+}
+.carousel image {
+    width: 100%;
+}

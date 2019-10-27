@@ -1,0 +1,9 @@
+.example {
+    margin: 0 20px;
+}
+.example .header {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: 500px;
+    font-size: 16px;
+}
