@@ -53,3 +53,21 @@
 .carousel .carousel-btn.next::before {
     content: "\27E9";
 }
+.carousel .nav-dots-container {
+    bottom: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.carousel .nav-dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+    border: 1px solid #ddd;
+}
+.carousel .nav-dot.active {
+    background-color: #18cfa8;
+}

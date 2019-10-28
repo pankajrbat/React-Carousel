@@ -47,9 +47,9 @@ function Carousel(props) {
                 </div>
             </Swipe>
             <button onClick={next} type="button" className="carousel-btn next" aria-label="carousel-next" />
-            {/* <div className="nav-dots-container">
-                {React.Children.map(props.children, (node, index) => <span className={`nav-dots ${activeSlide === index ? 'active' : ''}`} key={index}></span>)}
-            </div> */}
+            <div className="nav-dots-container">
+                {React.Children.map(props.children, (node, index) => <span className={`nav-dot ${activeSlide === index ? 'active' : ''}`} key={index}></span>)}
+            </div>
         </div>
     );
 }
