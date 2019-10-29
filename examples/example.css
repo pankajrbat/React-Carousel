@@ -1,5 +1,6 @@
 .example {
     margin: 0 20px;
+    box-sizing: border-box;
 }
 .example .header {
     padding: 10px;
