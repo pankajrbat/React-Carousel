@@ -32,7 +32,7 @@ function Swipe(props) {
         if ($container) {
             containerWidth = $container.getBoundingClientRect().width;
         }
-    });
+    }, []);
 
     const onTouchStart = event => {
         deltaX = 0;

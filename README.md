@@ -1,6 +1,9 @@
 # React-Carousel
 `React carousel with swipe and ssr support`
 
+###### Dependency
+* `react >= 16.11.0`
+
 ###### To run: 
 * `1 npm install`
 * `2 npm run start` 
