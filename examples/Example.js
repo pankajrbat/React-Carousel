@@ -26,14 +26,14 @@ function Example() {
                 <img src="/assets/model7.jpg" />
                 <img src="/assets/model8.jpg" />
             </Carousel>
-            <div className="header">Carousel with no default width</div>
+            {/* <div className="header">Carousel with no default width</div>
             <Carousel height="480" slidesInView="2">
                 <img src="/assets/image_1.jpg" />
                 <img src="/assets/image_2.jpeg" />
                 <img src="/assets/image_1.jpg" />
                 <img src="/assets/image_2.jpeg" />
                 <img src="/assets/image_1.jpg" />
-            </Carousel>
+            </Carousel> */}
         </div>
     )
 }
